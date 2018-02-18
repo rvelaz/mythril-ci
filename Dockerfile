@@ -9,8 +9,3 @@ RUN add-apt-repository ppa:ethereum/ethereum && \
     apt-get -y update && \
     apt-get install -y solc && \
     apt-get install -y && pip3 install mythril
-
-RUN mkdir /scripts
-RUN mkdir /source
-
-ENTRYPOINT ["/bin/bash", "-c"]
